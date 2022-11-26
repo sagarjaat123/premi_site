@@ -4,67 +4,91 @@
 /*@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Amatic+SC&family=Cinzel:wght@700&family=Great+Vibes&family=Island+Moments&family=Lobster&family=Marhey:wght@500&family=Oswald:wght@600&family=Satisfy&family=Silkscreen&family=Uchen&display=swap');*/
 
 *{
-    margin:0px;
     padding: 0px;
-    
+    margin: 0px;
 }
 body{
-    background-color:#ffffff;
-    width: 100%;
-    overflow-x: hidden;
-    
-}
+    overflow-x: hidden;}
+
 html{
-    overflow-x: hidden;
-}
+    overflow-x: hidden;}
+
 .header{
-        display: flex;
-        justify-content:space-between;
-        align-items: center;
-        height: 4rem;
-        
-        
-        
-    }
+    position: fixed;
+    display: flex;
+    align-items: center;
+     background-color: white;
+     top: 0px;
+    width: 100%; 
+}
 .logo {
-    height: 100px;
-    width: 100px;
-    padding-top: 80px;
-padding-left: 30px;
+    margin-left: 5rem;
+height: 100px;
+width: 100px;
+padding-right: 15rem;
+padding-bottom: 1rem;
+
 
 }
 .navbar{
-    background-color:rgb(255, 255, 255);
-    height: 60px;
-    width: 100%;
-    text-align: center;
+    
+background-color:rgb(255, 255, 255);
+height: 8rem;
+padding-top: 2rem;
+
+
 }
 .navbar-list{
-    display: flex;
-    gap: 5rem;
-    list-style: none;
-    align-items: center;
-    justify-content: center;
-    font-size: 20px;
-    padding-top: 60px;
-    
-  
-  font-family: 'Cinzel', serif;
 
-  /*font-family: 'Oswald', sans-serif;*/
-    
-    
+display: flex;
+gap: 5rem;
+list-style: none;
+align-items: center;
+justify-content: center;
+font-size: 20px;
+padding-top: 30px;
+font-family: 'Cinzel', serif;
+
+/*font-family: 'Oswald', sans-serif;*/
+
+
 
 }
 .navbar-link{
-    
-    text-decoration: none;
-    color: rgb(0, 0, 0); 
+
+text-decoration: none;
+color: rgb(0, 0, 0); 
 }
+
+
 .navbar-link:hover{
-    text-transform: uppercase;
-    text-decoration: underline;
+text-transform: uppercase;
+text-decoration: underline;
 }
+.mobile-navbar-btn {
+    display: none;
+    color: #000000;
+    background: transparent;
+    cursor: pointer;
+}
+
+.mobile-nav-icon {
+    width: 4rem;
+    height: 4rem;
+    color: #212529;
+}
+
+.mobile-nav-icon[name="close-outline"] {
+    display: none;
+}
+.line{
+    border-bottom: 4px solid rgb(243, 201, 86);
+    margin-top: 9.8rem;
+    width: 100%;
+    position: fixed;
+}
+
+
 
 
 .container{
@@ -72,7 +96,7 @@ padding-left: 30px;
     flex-direction: row;
     justify-content: center;
    gap: 100px;
-   padding-top: 1rem;
+   padding-top: 8rem;
     
     align-items: center;
     
@@ -81,11 +105,12 @@ padding-left: 30px;
 
 .leftside{
     display: inline-block;
-    align-items: center;
+    
     width:33%;
    font-family: 'Cinzel', serif;
     font-size: 20px;
-    padding-left: 2rem;
+    padding-left: 5rem;
+    padding-top: 3rem;
     
     
 
@@ -100,6 +125,7 @@ padding-left: 30px;
     justify-content: center;
     width:25%;
     margin-top: 100px;
+    padding-right: 4rem;
 }
 .image1{
     height:100%;
@@ -107,19 +133,19 @@ padding-left: 30px;
     border:1px solid rgb(0, 0, 0);
     border-radius: 20px;
     box-shadow: 12px 12px 6px rgb(64, 64, 64);
+    
 
 }
 
     
 
 .rightside{
-display: inline-block;
-align-items: center;
-justify-content: center;
+
 font-size: 15px;
 width:33%;
 margin-top: 100px;
 font-family: 'Cinzel', serif;
+padding-right: 3rem;
 
     
 
@@ -151,9 +177,15 @@ span::before {
     }*/
 
 .info p{
+    
     margin: 30px;
     color: rgb(0, 0, 0);
 }
+.line1{
+    border-bottom: 4px solid rgb(243, 201, 86);
+     margin-top: 3.7rem;
+    
+    width: 100%;}
 .foot{
     display: flex;
     flex-direction: row;
@@ -161,8 +193,8 @@ span::before {
     width:100%;
     position: fixed;
     bottom: 0px;
-    height:auto;
-      background-color:rgb(0, 0, 0);
+    height:180px;
+      background-color:rgb(231, 228, 228);
     
     
 }
@@ -171,7 +203,7 @@ span::before {
     display: inline-block;
     font-size: 35px;
     margin: 1rem;
-    color: white;
+    color: rgb(0, 0, 0);
 }
 .follow{
     padding-top: 30px;
@@ -179,12 +211,12 @@ span::before {
 }
 .follow a:hover{
 
-    color: rgb(129, 129, 129);
+    color: rgb(255, 255, 255);
     background-color: rgb(0, 0, 0);   
 }
 
 .f5{
-    color: #ffffff;
+    color: #000000;
     margin-left: 4rem;
     font-size: 20px;
     font-family: 'Cinzel', serif;
@@ -195,6 +227,7 @@ span::before {
        
 }
 .signin .btn{
+    display: none;
     margin: 4rem;
     margin-right: 0;
   font-size: 20px;
@@ -219,7 +252,7 @@ span::before {
 
 }
 .para{
-    color: #ffffff;
+    color: #000000;
     margin-top: 5rem;
     margin-right: 2rem;
     font-size: 12px;
@@ -243,35 +276,44 @@ span::before {
 
 @media (max-width:62em){
 
-    
     .mobile-navbar-btn {
         display: block;
         z-index: 999;
         color: #ffffff;
-        align-items: center;
-        padding-top: 3rem;
+      padding-top: 3rem;
         padding-right: 20px;
         
 
     }
     
     .header {
- position: relative;
- align-items: flex-start;
-        
 
         
-    }
+ position: relative;
+ align-items:flex-start;
+ 
+ 
+ }
+
     .active.header{
+        position:fixed;
         bottom: 0;
+        
+}
+.line{
     
-    }
+    position: absolute;
+    margin-top: 10rem;
+}
+
 
 
     .logo {
+        
         height: 60px;
         width: 60px;
-        padding-top: 3rem;}
+        padding-top: 3rem;
+    margin-left: 10px;}
         .navbar {
             /* display:none;*/
             width: 100%;
@@ -286,6 +328,7 @@ span::before {
             display: flex;
             justify-content: center;
             align-items: center;
+            
     
             transform: translateX(100%);
             transition: all 0.5s linear;
@@ -299,13 +342,14 @@ span::before {
         
         flex-direction: column;
         align-items: center;
-        justify-content: center;
-        
+        gap: 4rem;
     }
     .navbar-link{
         color: rgb(0, 0, 0);
     }
     .active .navbar {
+        padding-top: 4rem;
+        position:fixed;
         transform: translate(0);
         opacity: 1;
         visibility: visible;
@@ -314,8 +358,7 @@ span::before {
     .active .mobile-navbar-btn[name="menu-outline"] {
         display:none;
     }
-    
-
+   
 
    /* @media(max-width:35em) {
         .header {
@@ -324,12 +367,14 @@ span::before {
 
     .container{
         /*position: relative;*/
-        gap: 0px;
+        gap: 1rem;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         width: 100%;
+        padding-top: 30px;
+        
         
         
 
@@ -345,75 +390,74 @@ padding-top: 5rem;*/
  }
     
     .middleside{
-        
         width: 50%;
-          margin-top: 8rem;
+        padding-left: 3rem;
+          margin-top: 5rem;
         
          }
     .rightside{
-        display: flex;
-        flex-direction: row;
+       padding-left: 3rem;
         margin-top: 0px;
          width: 100%;
     }
+    
     .foot{
-         position:relative;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        height:auto;
-    }
-    .signin{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding-right: 3.3rem;
-        width: 100%;
-        
-    }
-    .signin.btn{
-         width: 100%;
-         margin: 0px;
-    
-        
-    }
-    
-    .follow{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding-top: 0px;
-        margin: 0px;
-        
-         }
-    .f5{
-        padding-right: 70px;
-    }
-    .social{
-        display: flex;
-        flex-direction: row;
-        margin-top: 0px;
-        
-        
-    }
-    .footerright{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-    
-          }
+        position:static;
+       display: flex;
 
-    .para{
-        padding-left: 100px;
-        padding-bottom: 50px;
-        margin-top: 10px;
-        
-    }
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+       bottom: 0px;
     
+       
+       
+       
+   }
+   .follow{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    height: 3rem;
+    
+    
+    
+     }
+.f5{
+    padding-right: 70px;
+    font-size: 15px;
+}
+.social{
+    display: flex;
+    flex-direction: row;
+    
+    
+ 
+    
+    
+}
+.footerright{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 6rem;
+    
+    
+    
+
+      }
+
+.para{
+    padding-left: 100px;
+    margin-bottom: 2rem;
+     
+    
+    
+}
 }
 
 

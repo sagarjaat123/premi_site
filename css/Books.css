@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Amatic+SC&family=Cinzel:wght@400;500&family=Great+Vibes&family=Island+Moments&family=Oswald:wght@600&family=Satisfy&family=Silkscreen&family=Uchen&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Amatic+SC&family=Cinzel:wght@700&family=Great+Vibes&family=Island+Moments&family=Oswald:wght@600&family=Satisfy&family=Silkscreen&family=Uchen&display=swap');
+/*@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Amatic+SC&family=Cinzel:wght@700&family=Great+Vibes&family=Island+Moments&family=Lobster&family=Marhey:wght@500&family=Oswald:wght@600&family=Satisfy&family=Silkscreen&family=Uchen&display=swap');*/
+
 *{
     padding: 0px;
     margin: 0px;
@@ -84,71 +86,46 @@ text-decoration: underline;
     width: 100%;
     position: fixed;
 }
-
-
-.container{
+.head{
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #ffffff;
-    width: 100%;
-    height: auto;
-    padding-top: 14rem;
+    margin-top: 12rem;
+    font-size: 50px;
     font-family: 'Cinzel', serif;
-}
-#ar{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-left: 6rem;
-    font-size: 40px;
-    font-family: 'Cinzel', serif;
-}
 
+    
 
+}
 .bigcontainer{
-    
-    max-width:100%;
-    margin-left: 10%;
-    margin-right: 10%;
-    
     display: grid;
-    grid: auto / auto auto auto;
+    grid:15%/ 33% 33% 33%;
     gap: 4rem;
-    padding-top: 3rem;
-    padding-bottom: 2rem;
-    
+    margin-top: 5rem;
+ 
+    margin-left: 5rem;
+    margin-right:12rem ;
+    margin-bottom: 5rem;
 }
 .smallcontainer{
     display: flex;
-    flex-direction: row;
-    justify-content:flex-start;
-    padding-left: 2rem;
+    flex-direction: column;
     align-items: center;
-    border:2px solid rgb(235,171, 71);
-    border-radius: 12px;
-    box-shadow: 10px 10px 10px rgb(101, 99, 99);
-    height: 10rem;
+    justify-content: center;
     width: 100%;
-    gap: 5rem;
-    font-size: 20px;
 
-    
-    
+    border: 3px solid rgb(243,201, 86);
+    background-color: rgb(242, 241, 241);
+    box-shadow: 10px 10px 10px black;
 }
-#award{
-    
-    color: rgb(235,171,71);
-    font-size: 70px;
+.smallcontainer p{
+    font-size: 15px;
+    font-family: 'Cinzel', serif;
+    padding-top: 20px;
+    align-self: center;
 }
-.line1{
-    border-bottom: 4px solid rgb(243, 201, 86);
-    
-    width: 100%;}
-    
 .foot{
-    
+    position: relative;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -158,12 +135,18 @@ text-decoration: underline;
     
     
 }
+.line1{
+    border-bottom: 4px solid rgb(243, 201, 86);
+    
+    width: 100%;
+    
+}
 
 .foot .follow a{
     display: inline-block;
     font-size: 35px;
     margin: 1rem;
-    color: rgb(0, 0, 0);
+    color: rgb(17, 16, 16);
     
 }
 .follow{
@@ -178,7 +161,7 @@ text-decoration: underline;
 }
 
 .f5{
-    color: #040404;
+    color: #000000;
     margin-left: 4rem;
     font-size: 20px;
     font-family: 'Cinzel', serif;
@@ -222,8 +205,6 @@ text-decoration: underline;
     margin-right: 2rem;
     font-size: 12px;
 }
-
-    
 @media (max-width:65em){
     
 
@@ -246,6 +227,9 @@ text-decoration: underline;
  align-items:flex-start;
  
  
+ }
+ .head{
+    margin-top: 4rem;
  }
 
     .active.header{
@@ -302,6 +286,7 @@ text-decoration: underline;
     }
     .active .navbar {
         padding-top: 4rem;
+        
         position:fixed;
         transform: translate(0);
         opacity: 1;
@@ -311,30 +296,26 @@ text-decoration: underline;
     .active .mobile-navbar-btn[name="menu-outline"] {
         display:none;
     }
-    .container{
-        padding-top: 7rem;
-    }
-    #ar{
-        
-        
-         padding: 0px;
-         padding-top: 0px;
-        font-size: 25px;
-
+    .head{
+        margin-top: 5rem;
+        font-size: 40px;
     }
     .bigcontainer{
+        margin-top: 2rem;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         gap: 2rem;
-        
-        
+    margin-right: 2rem;
+    margin-left: 2rem;
     }
-    .smallcontainer{
-        height: 11rem;
+    
+    .smallcontainer img{
+        height:100%;
         width: 100%;
-
+        top: 0;
+        left: 0;
     }
     .foot{
         position:static;
